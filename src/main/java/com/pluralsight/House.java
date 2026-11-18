@@ -67,8 +67,8 @@ import java.math.RoundingMode;
                 case 4:
                     pricePerSquareFoot = new BigDecimal("80.00");
                     break;
-                default:
-                    throw new IllegalArgumentException("Condition must be from 1 to 4.");
+                default : {throw new RuntimeException("the condition was not ann expected int 1-4");
+                }
             }
 
             BigDecimal housePart =
